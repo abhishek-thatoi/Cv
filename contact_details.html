@@ -1,0 +1,40 @@
+<!-- 
+    1. unordered list
+    2. form tag
+    3. attributes of form tag 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=   1.0">
+    <title>contact me</title>
+</head>
+<body>
+    <h2><u>Contact details:</u></h2>
+    <ul>
+        <li><b>phone no:</b> 9832128828</li>
+        <li><b>e-mail id:</b> abhishekthatoi@gmail.com</li>
+    </ul>
+
+<!-- autocomplete fills the previously entered data automatically -->
+<!-- The action attribute specifies(URL of) where to send the form data/input data -->
+<!-- The method attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute).
+
+The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post"). -->
+
+    <form action="index.html" autocomplete="on" method="post" enctype="text/plain"> <!-- here action determines where will the filled data go once we click on the submit button  -->
+    <label for="name">your name:</label>
+    <input type="text" value="" autocomplete="">
+    <br>
+    <label for="number">phone no:</label>
+    <input type="text"></form>
+    <input type="checkbox" name="" id="review" value="given">
+    <label style="border: 2px solid; border: purple; margin-left: 10px; margin-right: 900px;" for="review">was it helpfull?</label><br><br>
+    <label for="submit"></label>
+    <input type="submit" name="" id="submit" value="Send">
+</body>
+</html>      
